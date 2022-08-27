@@ -1,0 +1,42 @@
+body{
+    text-align: center;
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.square{
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    display: inline-block;
+    margin: 0;
+    position:relative;
+    transition: all .1s ease-out;
+    box-sizing: border-box;
+}
+
+.square:hover{
+    border: 5px solid rgb(28, 176, 230);
+    cursor: pointer;
+}
+
+.o:after{
+    content: "\1F6E1";
+    font-size: 100px;
+    line-height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.x:after{
+    content: "\2694";
+    font-size: 100px;
+    line-height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
