@@ -13,6 +13,7 @@ h1{
 }
 
 .stage{
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -36,6 +37,7 @@ h1{
     transition: all .1s ease-out;
     box-sizing: border-box;
     transition: all .3s ease-out;
+    
 }
 
 .square:hover{
@@ -96,58 +98,72 @@ h1{
 
 .sec{
     background-color: red;
-    height: 10px;
-    width: 300px;
+    height: 5px;
+    width: 400px;
     position: absolute;
-    top: 250px;
-    left: 50%;
-    transform: translateX(-50%);
     display: none;
+    
+}
+
+.a1{
+    top:150px;
+    left: 100px;
 }
 
 .a2{
-    top:400px;
+    top:300px;
+    left: 100px;
 }
+
 .a3{
-    top:550px
+    top:450px;
+    left: 100px;
 }
+
 .a4{
-    rotate: -90deg;
-    left: 175px;
-    top: 250px;
+    rotate: 90deg;
+    left: -50px;
+    top: 300px;
 }
+
 .a5{
-    rotate: -90deg;
-    top:250px;
-    left:325px;
+    rotate: 90deg;
+    top:300px;
+    left:100px;
 }
+
 .a6{
-    rotate: -90deg;
-    top:250px;
-    left:475px;
+    rotate: 90deg;
+    top:300px;
+    left: 250px;
 }
+
 .a7{
     rotate: 45deg;
-    top:550px;
-    left:400px;
+    top:300px;
+    left:75px;
     width: 450px;
 }
 .a8{
     rotate: -45deg;
-    top:250px;
-    left:400px;
+    top:300px;
+    left:75px;
     width: 450px;
 }
+
 
 .s0, .s1, .s2{
     border-top:none ;
 }
+
 .s0 , .s3 , .s6{
     border-left:none;
 }
+
 .s2, .s5, .s8{
     border-right:none;
 }
+
 .s6, .s7, .s8{
     border-bottom:none;
 }
