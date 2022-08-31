@@ -30,15 +30,24 @@ let functions = {
             let position = square.id;
             let symbol = board[position];
             if(symbol != ""){
-                square.innerHTML = `<div class="${symbol}"></div>`;
+                square.innerHTML = `<i class="fa-regular fa-${symbol}"></i>`;
             }
         });
     },
 
     alert : function (){
         const alertWin = document.querySelector("#alertWin") 
-        alertWin.innerHTML = `<h2> Player Winner ${playerTime}</h2>`;
-        alertWin.style.display = "flex";
+
+        if(playerTime == 0){
+            alertWin.innerHTML = ` <p>Vencedor: </p> <i class="fa-regular fa-circle"></i>`
+        } else {
+            alertWin.innerHTML = ` <p>Vencedor: </p> <i class="fa-regular fa-x"></i>`
+        }
+
+        setTimeout(()=>{
+            alertWin.style.display = "flex"; 
+        },500);
+        
     },
 
     winLine: function (x) {
